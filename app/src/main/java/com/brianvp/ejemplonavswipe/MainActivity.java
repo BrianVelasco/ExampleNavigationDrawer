@@ -20,11 +20,13 @@ import com.brianvp.ejemplonavswipe.Fragments.AmarilloFragment;
 import com.brianvp.ejemplonavswipe.Fragments.AzulFragment;
 import com.brianvp.ejemplonavswipe.Fragments.ContenedorFragment;
 import com.brianvp.ejemplonavswipe.Fragments.FormularioFragment;
+import com.brianvp.ejemplonavswipe.Fragments.ListaFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,
         ContenedorFragment.OnFragmentInteractionListener, AmarilloFragment.OnFragmentInteractionListener,
-        AzulFragment.OnFragmentInteractionListener,FormularioFragment.OnFragmentInteractionListener{
+        AzulFragment.OnFragmentInteractionListener,FormularioFragment.OnFragmentInteractionListener,
+        ListaFragment.OnFragmentInteractionListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -116,6 +118,13 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_share) {
             fragment = new ContenedorFragment();
+            seleccionado = true;
+
+
+
+        }
+        else if (id == R.id.dragon) {
+            fragment = new ListaFragment();
             seleccionado = true;
 
 

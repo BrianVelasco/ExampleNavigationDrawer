@@ -24,6 +24,10 @@
                 android:id="@+id/nav_share"
                 android:icon="@drawable/tabs"
                 android:title="TABS" />
+            <item
+                android:id="@+id/dragon"
+                android:icon="@drawable/dragon"
+                android:title="Lista" />
 
         </menu>
     </item>
